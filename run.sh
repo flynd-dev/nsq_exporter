@@ -1,5 +1,6 @@
 #!/bin/bash
 
+docker stop nsq-exporter
 docker rm nsq-exporter
 docker rmi nsq-exporter
 docker build -t nsq-exporter:latest .
