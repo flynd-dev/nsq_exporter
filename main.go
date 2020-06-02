@@ -19,7 +19,7 @@ const Version = "0.0.0.dev"
 var (
 	listenAddress     = flag.String("web.listen", ":9117", "Address on which to expose metrics and web interface.")
 	metricsPath       = flag.String("web.path", "/metrics", "Path under which to expose metrics.")
-	nsqdURL           = flag.String("nsqd.addr", "http://localhost:4151/stats", "Address of the nsqd node.")
+	nsqdURL           = flag.String("nsqd.addr", "nsq.transflynd.com:4151/stats", "Address of the nsqd node.")
 	enabledCollectors = flag.String("collect", "stats.topics,stats.channels", "Comma-separated list of collectors to use.")
 	namespace         = flag.String("namespace", "nsq", "Namespace for the NSQ metrics.")
 	tlsCACert         = flag.String("tls.ca_cert", "", "CA certificate file to be used for nsqd connections.")
